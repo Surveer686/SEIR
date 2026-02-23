@@ -20,7 +20,6 @@ if title:
     print(title.get_text())
 else:
     print("No title found")
-print()
 body = soup.find('body')
 if body:
     text = body.get_text()
@@ -29,6 +28,6 @@ if body:
 else :
     print("No body found")
 links = soup.find_all('a', href=True)
-print("Links:")
+#print("Links:")
 for link in links:
     print(link['href'])
